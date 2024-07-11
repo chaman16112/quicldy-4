@@ -1,23 +1,50 @@
-    .container {
-        border: 8px solid black;
-    }
-    
-    .row {
-        border: 4px solid blue;
-    }
-    
-    .col,
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7,
-    .col-8,
-    .col-9,
-    .col-10,
-    .col-11,
-    .col-12 {
-        border: 3px solid green;
-    }
+.center {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    background-color: black;
+    height: 10px;
+    border-radius: 10px;
+    width: 50%
+}
+
+.line1 {
+    background-color: green;
+    height: 10px;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.buttons {
+    background-color: white;
+    display: flex;
+    width: 160px;
+    border-radius: 50px;
+    position: relative;
+    align-items: center;
+}
+
+.buttons .button {
+    background-color: #04AA6D;
+    padding: 12px;
+    width: 50%;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.buttons .button1 {
+    width: 100%;
+    position: absolute;
+    text-align: end;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.buttons .button1:hover {
+    background-color: #048555;
+    color: white;
+}
